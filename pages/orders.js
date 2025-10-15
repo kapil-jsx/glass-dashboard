@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import Layout from '@/components/Layout';
-import { useAuth } from '@/context/AuthContext';
-import { useData } from '@/context/DataContext';
+import Layout from '../components/Layout';
+import { useAuth } from '../context/AuthContext';
+import { useData } from '../context/DataContext';
 import { FiPlus, FiEdit2, FiTrash2, FiEye, FiX } from 'react-icons/fi';
-import { formatCurrency, formatDate, getStatusBadgeClass } from '@/utils/format';
-import { generateOrderId } from '@/utils/format';
-import { items, brands, thicknessOptions } from '@/data/staticData';
+import { formatCurrency, formatDate, getStatusBadgeClass } from '../utils/format';
+import { generateOrderId } from '../utils/format';
+import { items, brands, thicknessOptions } from '../data/staticData';
 
 export default function Orders() {
   const { user } = useAuth();
@@ -425,7 +425,7 @@ export default function Orders() {
 
                   {formData.items.length === 0 && (
                     <div className="text-center py-8 text-gray-500">
-                      No items added. Click "Add Item" to add products.
+                      No items added. Click &quot;Add Item&quot; to add products.
                     </div>
                   )}
                 </div>

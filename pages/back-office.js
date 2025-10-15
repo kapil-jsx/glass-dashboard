@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Layout from '@/components/Layout';
-import { useAuth } from '@/context/AuthContext';
-import { useData } from '@/context/DataContext';
+import Layout from '../components/Layout';
+import { useAuth } from '../context/AuthContext';
+import { useData } from '../context/DataContext';
 import { FiEdit2, FiEye, FiX, FiPrinter, FiCheck } from 'react-icons/fi';
-import { formatCurrency, formatDate } from '@/utils/format';
+import { formatCurrency, formatDate } from '../utils/format';
 
 export default function BackOffice() {
   const { user } = useAuth();

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Layout from '@/components/Layout';
-import { useAuth } from '@/context/AuthContext';
-import { useData } from '@/context/DataContext';
+import Layout from '../components/Layout';
+import { useAuth } from '../context/AuthContext';
+import { useData } from '../context/DataContext';
 import { FiCheckCircle, FiXCircle, FiClock, FiEye, FiX } from 'react-icons/fi';
-import { formatCurrency, formatDate, getStatusBadgeClass } from '@/utils/format';
+import { formatCurrency, formatDate, getStatusBadgeClass } from '../utils/format';
 
 export default function Approvals() {
   const { user } = useAuth();

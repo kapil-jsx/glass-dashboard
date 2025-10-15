@@ -1,8 +1,8 @@
-import { useAuth } from '@/context/AuthContext';
-import { useData } from '@/context/DataContext';
-import Layout from '@/components/Layout';
+import { useAuth } from '../context/AuthContext';
+import { useData } from '../context/DataContext';
+import Layout from '../components/Layout';
 import { FiShoppingCart, FiCheckCircle, FiXCircle, FiClock, FiTruck } from 'react-icons/fi';
-import { formatCurrency } from '@/utils/format';
+import { formatCurrency } from '../utils/format';
 
 export default function Dashboard() {
   const { user } = useAuth();
@@ -29,7 +29,7 @@ export default function Dashboard() {
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
           <p className="mt-2 text-gray-600">
-            Welcome back, {user?.name}! Here's an overview of your operations.
+            Welcome back, {user?.name}! Here&apos;s an overview of your operations.
           </p>
         </div>
 

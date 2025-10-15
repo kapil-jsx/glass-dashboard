@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Layout from '@/components/Layout';
-import { useAuth } from '@/context/AuthContext';
-import { useData } from '@/context/DataContext';
+import Layout from '../components/Layout';
+import { useAuth } from '../context/AuthContext';
+import { useData } from '../context/DataContext';
 import { FiPlus, FiEdit2, FiEye, FiX, FiPrinter, FiCheck } from 'react-icons/fi';
-import { formatCurrency, formatDate, generateLoadingSlipNo } from '@/utils/format';
+import { formatCurrency, formatDate, generateLoadingSlipNo } from '../utils/format';
 
 export default function LoadingSlips() {
   const { user } = useAuth();

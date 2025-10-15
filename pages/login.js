@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '../context/AuthContext';
 import { FiLogIn, FiUser, FiLock } from 'react-icons/fi';
 
 export default function Login() {
@@ -32,7 +32,7 @@ export default function Login() {
     const creds = roleCredentials[selectedRole];
     setUsername(creds.username);
     setPassword(creds.password);
-  }, [selectedRole]);
+  }, [selectedRole, roleCredentials]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
